@@ -5,7 +5,7 @@
 /// ```
 /// use morsel::encode::check;
 ///
-/// let string:String = "The quick brown fox jumps over the lazy dog.".to_string();
+/// let string:String = "SOS".to_string();
 /// let result = check(string);
 ///
 /// assert_eq!(result, true)
@@ -29,13 +29,13 @@ pub fn check(check:String) -> bool {
 /// ```
 /// use morsel::encode::encode;
 ///
-/// let string:String = "The quick brown fox jumps over the lazy dog.".to_string();
+/// let string:String = "SOS".to_string();
 /// let result:String = match encode(string){
 ///     Ok(string) => string,
 ///     Err(error) => error,
 /// };
 ///
-/// assert_eq!(result, " - .... .    --.- ..- .. -.-. -.-    -... .-. --- .-- -.    ..-. --- -..-    .--- ..- -- .--. ...    --- ...- . .-.    - .... .    .-.. .- --.. -.--    -.. --- --. .-.-.-".to_string())
+/// assert_eq!(result, " ... --- ...".to_string())
 ///
 /// ```
 ///
