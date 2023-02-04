@@ -3,6 +3,8 @@ name = "morsel"
 version = "0.0.0"
 authors = ["Foxery"]
 edition = "2021"
+description = "Note: This library is still in the development phase and may not be entirely functional.\nThe ultimate MORSE Library!"
+license = "CC0 1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
