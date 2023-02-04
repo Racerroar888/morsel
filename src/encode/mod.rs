@@ -35,7 +35,7 @@ pub fn check(check:String) -> bool {
 ///     Err(error) => error,
 /// };
 ///
-/// assert_eq!(result, " ... --- ...".to_string())
+/// assert_eq!(result, "... --- ...".to_string())
 ///
 /// ```
 ///
@@ -88,6 +88,9 @@ pub fn encode(encode:String) -> Result<String, String> {
             '.' => encoded.push_str(".-.-.-"),
             _ => {}
         }
+    }
+    if encoded.len() > 0 {
+        encoded.remove(0);
     }
     return Ok(encoded);
 }
